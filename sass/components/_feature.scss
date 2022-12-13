@@ -1,0 +1,44 @@
+.feature {
+&__h3 {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+
+
+&__p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-second-color);
+}
+
+
+&__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+&__card:not(:last-child) {
+    margin-right: 30px;
+}
+
+&__icons {
+    width: 70px;
+    height: 70px;
+}
+
+&__iconsFone {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--section-bacground-color);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+}

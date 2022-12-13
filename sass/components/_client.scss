@@ -1,0 +1,41 @@
+.client {
+    &__h2 {
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--main-text-color);
+            margin-bottom: 50px;
+        }
+    &__logo {
+        width: 106px;
+            height: 60px;
+            fill: currentColor;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+    
+        color: var(--link-gray-color);
+        background-color: var(--text-white-color);
+        border: 1px solid var(--link-gray-color);
+        border-radius: 4px;
+    
+        transition: var(--transition), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        &__link:hover,
+        &__link:focus {
+                    color: var(--accent-color);
+                    border: 1px solid var(--accent-color);
+                }
+     
+}

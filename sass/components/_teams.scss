@@ -1,0 +1,71 @@
+.teams {
+    background-color: var(--section-bacground-color);
+
+
+&__card {
+    width: 270px;
+    padding-bottom: 30px;
+
+    background-color: var(--text-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+&__list {
+    display: flex;
+    gap: 30px;
+}
+
+&__h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+&__h2 {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}
+&__p {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+}
+ 
+ 
+.socialLink {
+    &__list {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+    }
+    &__link {
+        @include colored(var(--link-gray-color), var(--text-white-color));
+       
+    }
+        &__link:hover,
+        &__link:focus{
+            color: var(--text-white-color);
+            background-color: var(--accent-color);
+        }
+        &__icons {
+            width: 20px;
+                height: 20px;
+                fill: currentColor;
+        }
+
+}

@@ -1,0 +1,110 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+
+    &__button {
+        background: var(--button-portfolio);
+        border-radius: 4px;
+        border: none;
+        padding: 8px 22px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-text-color);
+
+        padding: 6px 22px;
+
+        transition: var(--transition), var(--transitionBgC),
+            var(--transition-box-shadow);
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--accent-color);
+
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+
+            color: var(--text-white-color);
+        }
+    }
+}
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project__link {
+    display: block;
+    transition: var(--transition-box-shadow);
+}
+
+.project__tumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.project__link:hover .project__overlay,
+.project__link:active .project__overlay,
+.project__link:focus .project__overlay {
+    transform: translateY(0);
+}
+
+.project__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    transform: translateY(100%);
+    transition: transform var(--timing-function);
+}
+
+.project__about {
+    color: var(--text-white-color);
+    padding: 63px 24px;
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+}
+
+.project__link:hover,
+.project__link:active,
+.project__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__name {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--project-border-color);
+    border-left: 1px solid var(--project-border-color);
+    border-right: 1px solid var(--project-border-color);
+}
+
+
+.project__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+}
+
+
+.project__type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-second-color);
+}
